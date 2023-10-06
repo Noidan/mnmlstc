@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lovkaitsis Anton Frontend</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Антон Ловкайцис</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ловкайцис Антон</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Обо мне</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Опыт</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Проекты</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Контакты</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Аватар" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Приветствую, я</p>
+            <h1 class="title">Антон Ловкайцис</h1>
+            <p class="section__text__p2">Frontend Разработчик</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Lovkaitsis_Anton_Frontend.pdf')">
+                    Скачать резюме
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Контакты
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn иконка" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%D0%B9%D1%86%D0%B8%D1%81-8739791b8/'" />
+                <img src="./assets/github.png" alt="Github иконка" class="icon"
+                    onclick="location.href='https://github.com/Noidan'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Узнать больше</p>
+        <h1 class="title">Обо мне</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Аватар" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Опыт иконка" class="icon" />
+                        <h3>Опыт</h3>
+                        <p>Пол года ежедневного обучения <br />Frontend Разработке<br /> Создание учебных проектов</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Образование иконка" class="icon" />
+                        <h3>Образование</h3>
+                        <p>КФУ (НФ) ПМиИТ (4 курса)<br /> Прикладная Математика и Информационные Технологии<br />Курсы
+                            по вёрстке, js и ui/ux в Skillbox и ЯндексПрактикуме</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+                        reprehenderit et laborum, rem, dolore eum quod voluptate
+                        exercitationem nobis, nihil esse debitis maxime facere minus sint
+                        delectus velit in eos quo officiis explicabo deleniti dignissimos.
+                        Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+                        reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Стрелка" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Изучите мой</p>
+        <h1 class="title">Опыт</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Hard Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Средний</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Базовый</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Английский</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Выше среднего</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Адаптация </h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Самостоятельность</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Коммуникативность</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Стрессоустойчивость</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Самообучаемость</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="иконка Опыт" class="icon" />
+                            <div>
+                                <h3>Без вредных привычек</h3>
+                                <p></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="стрелка" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Посмотрите мои недавние </p>
+        <h1 class="title">Проекты</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Магазин мерча Leo Nerd" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Магазин мерча <br />Leo Nerd</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Доставка средневековой еды" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Доставка средневековой еды</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Лист персонажа для Cyberpunk Red" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Лист персонажа для Cyberpunk Red</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="иконка Стрелка" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Связаться</p>
+        <h1 class="title">Мои контакты</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email иконка" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">a8820007@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn иконка" class="icon contact-icon" />
+                <p><a
+                        href="https://www.linkedin.com/in/%D0%B0%D0%BD%D1%82%D0%BE%D0%BD-%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0%D0%B9%D1%86%D0%B8%D1%81-8739791b8/">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Авторские права &#169; 2023 Антон Ловкайцис. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
